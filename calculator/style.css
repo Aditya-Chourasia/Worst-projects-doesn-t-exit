@@ -101,7 +101,8 @@ body {
 
 #calculator {
   background-color: #85cdca;
-  width: 60%;
+  width: 290px;
+  /* width: 60%; */
   border-radius: 20px;
   padding: 20px;
   margin: 5% auto;

@@ -27,6 +27,10 @@ document.querySelector("#Bright").addEventListener("click", function () {
 // Natural Theme
 document.querySelector("#Natural").addEventListener("click", function () {
     document.querySelector("body").classList.add("Natural");
+    document.getElementById("calculator").style.background = "#659EBC"
+    for(let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
+        document.querySelectorAll(".calc-button")[i].style.background = "#BD986B"
+    }
 
     document.querySelector("body").classList.remove("Colorful")
     document.querySelector("body").classList.remove("Bright")
@@ -36,6 +40,10 @@ document.querySelector("#Natural").addEventListener("click", function () {
 // Fresh theme
 document.querySelector("#Fresh").addEventListener("click", function () {
     document.querySelector("body").classList.add("Fresh");
+    document.getElementById("calculator").style.background = "#05396B"
+    for(let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
+        document.querySelectorAll(".calc-button")[i].style.background = "#EDF5E0"
+    }
 
     document.querySelector("body").classList.remove("Colorful")
     document.querySelector("body").classList.remove("Bright")
