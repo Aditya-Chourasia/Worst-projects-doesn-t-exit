@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;700;900&family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #131a24;
+  color: #fff;
+}
+
+#navbar nav {
+  display: flex;
+  align-items: center;
+  padding: 1% 5%;
+  background-color: #131a24;
+  position: fixed;
+  width: 100%;
+}
+
+#navbar-brand {
+  color: #66d9ed;
+  font-size: 2rem;
+  font-family: "Chivo Mono", monospace;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar-brand:hover {
+  opacity: 0.8;
+}
+
+#navbar-link-list {
+  width: 100%;
+}
+
+#list-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  opacity: 0.7;
+  margin-right: 50px;
+  font-family: "Chivo Mono", monospace;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-link a::before {
+  content: "01";
+  padding-right: 10px;
+}
+
+.expertise-link a::before {
+  content: "02";
+  padding-right: 10px;
+}
+
+.work-link a::before {
+  content: "03";
+  padding-right: 10px;
+}
+
+.experience-link a::before {
+  content: "04";
+  padding-right: 10px;
+}
+
+.contact-link a::before {
+  content: "05";
+  padding-right: 10px;
+}
+
+#title-text {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title-heading {
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#title-paragraph {
+  font-size: 2rem;
+  font-family: "Chivo Mono", monospace;
+}
+
+#title-heading-expert {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#expertise .row {
+  display: flex;
+  padding: 5% 7%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 285px;
+  height: 285px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #fff;
+  padding: 20px;
+}
+
+.card-1 h3,
+.card-2 h3,
+.card-3 h3 {
+  font-size: 2rem;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.card-1,
+.card-2 {
+  border-right: none;
+}
+
+.trail {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: #66d9ed;
+  transform: translate(-10px, -20px);
+}
+
+#work .row {
+  display: flex;
+  padding: 5% 7%;
+  align-items: center;
+  justify-content: center;
+}
+
+#work a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-1-work,
+.card-2-work,
+.card-3-work {
+  background-color: #131a24b9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 305px;
+  height: 305px;
+  font-family: "Montserrat", sans-serif;
+  margin: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-1-work p,
+.card-2-work p,
+.card-3-work p {
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.card-1-work h3,
+.card-2-work h3,
+.card-3-work h3,
+.card-1-work a,
+.card-2-work a,
+.card-3-work a {
+  padding: 20px;
+}
+
+.card-1-work::after {
+  content: "";
+  width: 305px;
+  height: 305px;
+  position: absolute;
+  z-index: -1;
+  background-image: url("images/tindog.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-2-work::after {
+  content: "";
+  width: 305px;
+  height: 305px;
+  position: absolute;
+  z-index: -1;
+  background-image: url("images/dice.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3-work::after {
+  content: "";
+  width: 305px;
+  height: 305px;
+  position: absolute;
+  z-index: -1;
+  background-image: url("images/css.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-1-work:hover,
+.card-2-work:hover,
+.card-3-work:hover {
+  background-color: #131a24d6;
+}
+
+#contact {
+  text-align: center;
+}
+
+#title-heading-professional {
+  font-size: 3rem;
+  width: 50%;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.software-heading {
+  text-decoration: underline #df058d;
+}
+
+.front-end {
+  text-decoration: underline #2c49d8;
+}
+
+.js {
+  text-decoration: underline #ff6b2b;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #ff6b2b;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+#expert-parargraph {
+  font-family: "Chivo Mono", monospace;
+  text-align: center;
+}
+
+#contact #title-paragraph a,
+#contact #title-paragraph a:active,
+#contact #title-paragraph a:visited,
+#contact #title-paragraph a:hover{
+  color: #fff !important;
+}
+
+#acc {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.acc-1 , .acc-2 , .acc-3 {
+  margin: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #d65b26;
+}
+
+.active, .accordion {
+  border-radius: 10px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  margin: 20px 0;
+  padding: 0 18px;
+  background-color: #d65b26;
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

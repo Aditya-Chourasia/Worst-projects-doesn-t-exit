@@ -2,7 +2,7 @@
 document.querySelector("#Colorful").addEventListener("click", function () {
     document.querySelector("body").classList.add("Colorful");
     document.getElementById("calculator").style.background = "#85cdca"
-    for(let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
         document.querySelectorAll(".calc-button")[i].style.background = "#E8A87C"
     }
 
@@ -15,7 +15,7 @@ document.querySelector("#Colorful").addEventListener("click", function () {
 document.querySelector("#Bright").addEventListener("click", function () {
     document.querySelector("body").classList.add("Bright");
     document.getElementById("calculator").style.background = "#242582"
-    for(let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
         document.querySelectorAll(".calc-button")[i].style.background = "#F64C71"
     }
 
@@ -28,7 +28,7 @@ document.querySelector("#Bright").addEventListener("click", function () {
 document.querySelector("#Natural").addEventListener("click", function () {
     document.querySelector("body").classList.add("Natural");
     document.getElementById("calculator").style.background = "#659EBC"
-    for(let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
         document.querySelectorAll(".calc-button")[i].style.background = "#BD986B"
     }
 
@@ -41,7 +41,7 @@ document.querySelector("#Natural").addEventListener("click", function () {
 document.querySelector("#Fresh").addEventListener("click", function () {
     document.querySelector("body").classList.add("Fresh");
     document.getElementById("calculator").style.background = "#05396B"
-    for(let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".calc-button").length; i++) {
         document.querySelectorAll(".calc-button")[i].style.background = "#EDF5E0"
     }
 
@@ -51,4 +51,12 @@ document.querySelector("#Fresh").addEventListener("click", function () {
 });
 
 // input 
-document.querySelector("#calculator-input").setAttribute("placeholder", "0")
+document.querySelector("#calculator-input").placeholder = "0";
+
+// add
+let add = document.getElementById("add").addEventListener("click", add);
+function add(num1, num2) {
+    var sum = num1 + num2;
+}
+
+document.querySelector("#calculator-input").placeholder = sum;
