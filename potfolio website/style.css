@@ -338,8 +338,12 @@ body {
     flex-direction: column;
   }
 
+  .nav-link {
+    margin-right: 0;
+  }
+
   #list-nav {
-    padding: 10px;
+    padding: 10px 0;
     width: 90%;
     margin: auto;
   }
