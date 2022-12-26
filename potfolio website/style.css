@@ -362,12 +362,10 @@ body {
 
   .expertise-link a::before {
     content: "";
-    padding-right: 10px;
   }
 
   .work-link a::before {
     content: "";
-    padding-right: 10px;
   }
 
   .contact-link a::before {
@@ -376,6 +374,5 @@ body {
 
   .contact-link a::before {
     content: "";
-    padding-right: 10px;
   }
 }
