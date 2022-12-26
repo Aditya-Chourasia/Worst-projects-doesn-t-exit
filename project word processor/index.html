@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4bf0cad3c2.js" crossorigin="anonymous"></script>
+    <title>Word Processor</title>
+</head>
+
+<body>
+    <h1 id="software-heading">Type Machine</h1>
+
+    <section id="starting">
+        <div class="start-control">
+            <p class="start-document-heading">Start a new document</p>
+
+            <div class="show-gallery">
+                <p class="text-gallery-whole"> <span class="text-gallery">Template Gallery</span><i
+                        class="fa-solid fa-folder"></i></p>
+            </div>
+
+            <!-- button to hide template -->
+            <div class="hide-template">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+
+        <div id="templates-blank">
+
+            <div id="blank-part">
+                <div class="template blank">
+                    <i class="fa-solid fa-plus blank-template"></i>
+                </div>
+                <span class="des-blank">Blank</span>
+            </div>
+            <div id="resume-1-serif">
+                <div class="template resume-1"></div>
+                <span class="dex-resume-1">Resume</span>
+                <span class="dex-resume-1-light">Serif</span>
+            </div>
+            <div id="resume-2-coral">
+                <div class="template resume-2"></div>
+                <span class="dex-resume-2">Resume</span>
+                <span class="dex-resume-2-light">Coral</span>
+            </div>
+            <div id="letter">
+                <div class="template letter"></div>
+                <div class="dex-letter">Letter</div>
+                <div class="dex-letter-light">Spearmint</div>
+            </div>
+            <div id="Project-proposal">
+                <div class="template Project-proposal"></div>
+                <div class="dex-project">Project proposal</div>
+                <div class="dex-project-light">Tropic</div>
+            </div>
+            <div id="brochure">
+                <div class="template brochure"></div>
+                <div class="dex-brochure">Project proposal</div>
+                <div class="dex-brochure-light">Tropic</div>
+            </div>
+            <div id="report">
+                <div class="template report"></div>
+                <div class="dex-report">Report</div>
+                <div class="dex-report-light">Luxe</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recent">
+
+        <div class="controls">
+            <p id="recent-heading">Recent documents</p>
+            <select name="filter" id="filter">
+                <option value="Public">Public Files</option>
+                <option value="Private" selected>Private Files</option>
+                <option value="Sharde">Shared with you</option>
+            </select>
+
+        </div>
+        <div id="empty-text"><h1>No text documents yet</h1></div>
+        
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

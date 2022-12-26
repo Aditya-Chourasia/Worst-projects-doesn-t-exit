@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Roboto:wght@300;400;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#software-heading {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+
+  border-bottom: 1px solid gray;
+}
+
+#starting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5% 10% 2%;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(240 240 240);
+}
+
+.start-control {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.text-gallery-whole {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-gallery-whole:hover {
+  background-color: rgb(185, 184, 184);
+}
+
+.start-document-heading {
+  margin-right: auto;
+  cursor: default;
+}
+
+.text-gallery {
+  margin-right: 10px;
+}
+
+.hide-template {
+  margin-left: 50px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgb(202, 202, 202);
+  transition: all ease-in-out 0.3s;
+}
+
+.hide-template:hover {
+    transform: scale(1.5);
+}
+
+.hide-template:active {
+    transform: scale(1);
+}
+
+.template {
+  margin: 20px 10px 10px;
+  border: 1px solid grey;
+  height: 200px;
+  border-radius: 5px;
+  width: 160px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.template:hover {
+  border-color: aqua;
+}
+
+.template:active {
+  transform: scale(0.9);
+}
+
+#templates-blank {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blank-template {
+  font-size: 2rem;
+}
+
+.des-blank {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.text-gallery-whole:active {
+  transform: scale(0.9);
+}
+
+.resume-1 {
+  background-image: url("https://ssl.gstatic.com/docs/templates/thumbnails/1wyFqxsRmKm9q--7j4WRmBMn694YdhV6hmNrfh4rVm2E_400.png");
+  background-size: cover;
+}
+
+#resume-1-serif,
+#resume-2-coral,
+#letter,
+#Project-proposal {
+  display: flex;
+  flex-direction: column;
+}
+
+.dex-resume-1,
+.dex-resume-1-light,
+.dex-resume-2,
+.dex-resume-2-light,
+.dex-letter,
+.dex-letter-light,
+.dex-project,
+.dex-project-light,
+.dex-brochure,
+.dex-brochure-light,
+.dex-report,
+.dex-report-light {
+  cursor: default;
+  margin-left: 10px;
+}
+
+.dex-resume-1-light,
+.dex-resume-2-light,
+.dex-letter-light,
+.dex-project-light,
+.dex-brochure-light,
+.dex-report-light {
+  color: gray;
+  font-weight: 100;
+}
+
+.resume-2 {
+  background-image: url("https://ssl.gstatic.com/docs/templates/thumbnails/10bJALGfGJG8BrzBSmG6EznIq6-84l1TZkQ-HC8jO368_400.png");
+  background-size: cover;
+}
+
+.letter {
+  background-image: url("https://ssl.gstatic.com/docs/templates/thumbnails/10e8_E36oj6_LuCRzckBFX_9oqbCHntmYB-jxB5U9gsw_400_2.png");
+  background-size: cover;
+}
+
+.Project-proposal {
+  background-image: url("https://ssl.gstatic.com/docs/templates/thumbnails/1XykI9TfWo4IoUqGLjQ-D8NIU4jZ1Ml9OI8-Euj5FrA0_400_3.png");
+  background-size: cover;
+}
+
+.brochure {
+  background-image: url("https://ssl.gstatic.com/docs/templates/thumbnails/1TojfPV3jurwEV2RpmVqnCCCR4z9g2eQBZ40XTHPBqk8_400_3.png");
+  background-size: cover;
+}
+
+.report {
+  background-image: url("https://ssl.gstatic.com/docs/templates/thumbnails/1OLxGsoZ-q6o9MiMbWpY7FngEKzF94SS6fZXAwo-vorM_400_2.png");
+  background-size: cover;
+}
+
+#recent .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+}
+#recent-heading {
+  cursor: default;
+}
+
+#filter,
+#filter:active,
+#filer:focus-visible {
+  font-family: "Montserrat", sans-serif;
+  border: none !important;
+  outline: none;
+  cursor: pointer;
+}
+
+#filter option {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+#recent {
+  display: flex;
+  flex-direction: column;
+}
+
+#empty-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
