@@ -68,3 +68,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function toggle() {
+    document.querySelectorAll(".nav-link-mobile").classList.remove("closed")
+}

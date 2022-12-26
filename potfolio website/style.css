@@ -12,6 +12,7 @@ body {
 }
 
 #navbar nav {
+  top: 0;
   display: flex;
   align-items: center;
   padding: 1% 5%;
@@ -184,7 +185,6 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 305px;
-  height: 305px;
   font-family: "Montserrat", sans-serif;
   margin: 20px;
   color: #fff;
@@ -196,7 +196,7 @@ body {
 .card-2-work p,
 .card-3-work p {
   line-height: 1.5;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .card-1-work h3,
@@ -205,46 +205,13 @@ body {
 .card-1-work a,
 .card-2-work a,
 .card-3-work a {
-  padding: 20px;
+  padding: 0 20px;
 }
 
-.card-1-work::after {
-  content: "";
-  width: 305px;
-  height: 305px;
-  position: absolute;
-  z-index: -1;
-  background-image: url("images/tindog.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.card-2-work::after {
-  content: "";
-  width: 305px;
-  height: 305px;
-  position: absolute;
-  z-index: -1;
-  background-image: url("images/dice.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.card-3-work::after {
-  content: "";
-  width: 305px;
-  height: 305px;
-  position: absolute;
-  z-index: -1;
-  background-image: url("images/css.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.card-1-work:hover,
-.card-2-work:hover,
-.card-3-work:hover {
-  background-color: #131a24d6;
+.card-1-work a,
+.card-2-work a,
+.card-3-work a {
+  padding-bottom: 20px;
 }
 
 #contact {
@@ -274,19 +241,6 @@ body {
   text-decoration: underline #ff6b2b;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #ff6b2b;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
 #expert-parargraph {
   font-family: "Chivo Mono", monospace;
   text-align: center;
@@ -295,48 +249,64 @@ body {
 #contact #title-paragraph a,
 #contact #title-paragraph a:active,
 #contact #title-paragraph a:visited,
-#contact #title-paragraph a:hover{
+#contact #title-paragraph a:hover {
   color: #fff !important;
 }
 
-#acc {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 50px;
+#title-text {
+  margin: 20px;
 }
 
-.acc-1 , .acc-2 , .acc-3 {
-  margin: 10px;
+@media screen and (max-width: 1000px) {
+  #expertise .row {
+    flex-direction: column;
+  }
+
+  .card-1 {
+    border-right: #fff solid 2px;
+  }
+
+  .card-2 {
+    border-top: none;
+    border-right: #fff solid 2px;
+    border-bottom: none;
+  }
+
+  #work .row {
+    flex-direction: column;
+  }
+
+  #title-heading {
+    font-size: 4rem;
+  }
+
+  #title-paragraph {
+    font-size: 1.5rem;
+  }
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #d65b26;
-}
+@media screen and (max-width: 800px) {
+  #navbar nav  {
+    flex-direction: column;
+    padding-left: 0;
+    width: 100% ;
+  }
 
-.active, .accordion {
-  border-radius: 10px;
-}
+  #navbar-link-list {
+    width: 100% !important;
+    left: 0;
+    text-align: center;
+  }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  margin: 20px 0;
-  padding: 0 18px;
-  background-color: #d65b26;
-  max-height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: max-height 0.2s ease-out;
-}
+  #title-text {
+    text-align: center;
+  }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
+  #title-heading {
+    font-size: 2rem;
+  }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  #title-heading-expert{
+     font-size: 2rem;
+  }
 }
